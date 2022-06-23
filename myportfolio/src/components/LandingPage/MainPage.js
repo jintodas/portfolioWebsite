@@ -1,21 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Nav from "../ui/Nav";
-import photo from "../LandingPage/photo.jpg"
+import photo from "../LandingPage/photo4.png"
 import ProfilePhoto from "../LandingPage/profilephoto.jpg"
+import { PortfolioPage  } from '../PortfolioPage/PortfolioPage';
+
 
 
 const Container = styled.div`
-height: calc( 100vh - 50px);
-background-color:  #dab3ff;
-
+height: calc(100vh-10px);
+background-color:black;
 display: flex;
-padding: 20px;
+overflow: hidden;
+backgorund-color: black;
 background-image:url(${photo});`
 
+
+
 const Left = styled.div`
-width: 60%;
+width: 50%;
+height:100vh;
 background-color: none;
 color: white;
 display: flex;
@@ -26,47 +30,56 @@ justify-content: center;
 `
 
 const Title = styled.h1`
-font-size: 70px;
-width: 60%;
+font-size: 50px;
 margin-bottom: 80px;
 z-index: 10;
 
 `
 const Right = styled.div`
-width: 40%;
+height:100vh;
+width: 50%;
 background-color: none;
-color: black;
+color: white;
 font-size:6rem;
 `
 
-const coverPhoto = styled.div`
-width : 300px;
-height:200px;
-background-image:url(${ProfilePhoto});
+const CoverPhoto = styled.div`
+margin-top:100px;
+width : 320px;
+height:400px;
 color: white;
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: right;
 `
+const Portfolio = styled.div`
+// height: calc(100vh-10px);
+background-color:black;
+display: flex;
+padding:20px;
+overflow: hidden;
+//background-image:url(${photo});`
 
 
 export const MainPage =() =>{
     return(
+       
     <Container>
-   
-<Left><Title>
-    <h3>Hey! Wellcome.</h3>
-    <h1>I am J. Das
-       </h1>
+ <Left><Title>
+    <h4>Hey! Wellcome to my page</h4>
+    <h5>I am Jinto Das, an aspiring Frontend Developer</h5>
     </Title></Left>
 
     <Right>
-
-        <coverPhoto>
-           <h3>An aspiring </h3>
-           <h2>Frontend Developer</h2>
-        </coverPhoto>
+    <CoverPhoto></CoverPhoto>
+    
     </Right>
+
+ 
+
+
         </Container>
+
+     
     )
 }

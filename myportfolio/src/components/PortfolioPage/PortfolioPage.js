@@ -1,21 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Nav from '../ui/Nav'
+import PortfolioPhoto from "../LandingPage/photo7.jpg"
 
 const CardsContainer = styled.div`
   display: flex;
+
+  flex-direction:row;
+  height:1000px;
+  width:100%;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top:100px;
+  background-image:url(${PortfolioPhoto});
 `;
 const linkStyle = {
   textDecoration: "none",
-  color: "black"
 };
 const BigTitle = styled.h1`
   text-align: center;
   font-size: 3rem;
   padding: 30px 0;
+  text-color:#ffff;
 `;
 
 const Button = styled.button`
@@ -37,9 +43,10 @@ padding: 10px;
 export const PortfolioPage =() =>{
     return(
         <>
-        <Nav/>
-          <BigTitle>Projects</BigTitle>
-          <Button>FILTER</Button>
+        <CardsContainer>
+        <BigTitle>Projects</BigTitle>
+        </CardsContainer>
+          
          </> 
     );
 };

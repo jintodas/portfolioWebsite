@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
   display: flex;
+  flex-direction:row;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffff;
+  background-color:#ffff;
+  font-color:white;
   @media only screen and (max-width: 380px) {
     padding: 10px 10px;
   }
