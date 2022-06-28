@@ -66,8 +66,7 @@ export const MainPage =() =>{
        
     <Container>
  <Left><Title>
-    <h4>Hey! Wellcome to my page</h4>
-    <h5>I am Jinto Das, an aspiring Frontend Developer</h5>
+    <h2>Hey! Wellcome</h2>
     </Title></Left>
 
     <Right>

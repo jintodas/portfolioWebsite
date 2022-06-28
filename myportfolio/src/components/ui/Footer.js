@@ -53,7 +53,7 @@ const Footer = () => {
         <Left>
           <Link to="/">
             <Logo>
-              <img src={Image} className="w-100" alt="logo"></img>
+              <img src={Image} className="w-100" alt="Home"></img>
             </Logo>
           </Link>
         </Left>
@@ -85,7 +85,7 @@ const Footer = () => {
           
           <Link to="/categories" style={{ textDecoration: "none" }}>
         
-          <MenuItem>CV</MenuItem>
+          <MenuItem>Contact</MenuItem>
           
           </Link>
           <Link to="/accountpage" style={{ textDecoration: "none" }}>
@@ -94,6 +94,11 @@ const Footer = () => {
   
           <Link to="/cart" style={{ textDecoration: "none" }}>
           <MenuItem>LinkedIn</MenuItem>
+          </Link>
+          <Link to="/categories" style={{ textDecoration: "none" }}>
+        
+          <MenuItem>Copy-Right @ Jinto L. Das</MenuItem>
+          
           </Link>
           
         </Right>
