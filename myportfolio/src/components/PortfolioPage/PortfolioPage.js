@@ -12,7 +12,7 @@ const CardsContainer = styled.div`
   width:100%;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color:#020b14;
+  background-color:#0d0d0d;
   // background-image:url(${PortfolioPhoto});
 `;
 const linkStyle = {
@@ -27,8 +27,8 @@ const BigTitle = styled.h1`
   color:white;
   height:100px;
   width:100%;
-  background-color:none;
-  font-color:#fff;
+  background-color:#0d0d0d;
+  color:#ffff;
 `;
 
 const Button = styled.button`

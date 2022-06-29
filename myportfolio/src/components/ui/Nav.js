@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction:row;
@@ -62,13 +60,13 @@ const Nav = () => {
         <Center>
           <Menu>
             <Link
-              to="/categories"
+              to="/PortfolioPage"
               style={{ color: "inherit", textDecoration: "inherit" }}>
               <MenuItem>Portfolio</MenuItem>
             </Link>
          
             <Link
-              to="/categories"
+              to="PhotographyPage"
               style={{ color: "inherit", textDecoration: "inherit" }}>
               <MenuItem>Photography</MenuItem>
             </Link>
@@ -85,7 +83,7 @@ const Nav = () => {
         </Center>
         <Right>
           
-          <Link to="/categories" style={{ textDecoration: "none" }}>
+          <Link to="/ResumePage" style={{ textDecoration: "none" }}>
         
           <MenuItem>CV</MenuItem>
           

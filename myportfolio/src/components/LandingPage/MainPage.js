@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import photo from "../LandingPage/photo4.png"
 import ProfilePhoto from "../LandingPage/profilephoto.jpg"
-import { PortfolioPage  } from '../PortfolioPage/PortfolioPage';
+
 
 
 
@@ -65,7 +65,7 @@ export const MainPage =() =>{
     return(
        
     <Container>
- <Left><Title>
+   <Left><Title>
     <h2>Hey! Wellcome</h2>
     </Title></Left>
 

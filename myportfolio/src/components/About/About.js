@@ -39,11 +39,14 @@ color: white;
 font-size:6rem;
 `
 const DivLeftP= styled.div`
+display: flex;
+flow-direction: coloumn;
 align-item:center;
 display:flex;
 text-color:#ffff;
-font-size:2rem;
+font-size:3rem;
 margin-left:100px;
+padding:20px;
 `
 
 const MyPhoto = styled.div`
@@ -65,7 +68,8 @@ export const About =() =>{
  <Left>
 
      <DivLeftP>
-     I am Jinto Das, an aspiring Frontend Developer, passionate about coding and designing
+     <h1>Frontend Developer Photographer Traveler </h1>    
+   
      </DivLeftP>
   
     </Left>
