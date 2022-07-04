@@ -21,7 +21,7 @@ margin:auto;
 flex-wrap: wrap;
 background-color:#ffff;
 text-align:center;
-font-size:3em;
+font-size:4em;
 margin:20px 10px;
 `
 
@@ -47,7 +47,7 @@ const CV = styled.div`
     <>
       <Nav/>
    <Container>
-     <Title> Resume</Title>
+     <Title>RESUME</Title>
   <CV></CV>
   </Container>
       <Footer/>

@@ -9,10 +9,10 @@ const CardsContainer = styled.div`
   display:flex;
   flex-direction:row;
   height:1200px;
-  width:100%;
+  max-width:100%;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color:#0d0d0d;
+  background-color:#085e48;
   // background-image:url(${PortfolioPhoto});
 `;
 const linkStyle = {
@@ -25,20 +25,12 @@ const BigTitle = styled.h1`
   font-size: 4rem;
   text-color: white;
   color:white;
-  height:100px;
+  height:120px;
   width:100%;
-  background-color:#0d0d0d;
+  background-color:#064636;
   color:#ffff;
+  margin-top:0;
 `;
-
-const Button = styled.button`
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding-left: 50px;
-`;
-
 
 const Card1 = styled.div`
     display: flex;
@@ -105,7 +97,9 @@ export const PortfolioPage =() =>{
        
      
         <CardsContainer>
-        <BigTitle>Projects</BigTitle>
+        <BigTitle>PROJECTS</BigTitle>
+
+
         <Card1>
           <h2> Fideleo- Ecommerce Project</h2>
         </Card1>

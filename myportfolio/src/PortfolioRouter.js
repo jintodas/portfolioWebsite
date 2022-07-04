@@ -6,7 +6,8 @@ import {MainPage } from "./components/LandingPage/MainPage";
 import{PortfolioPage} from "./components/PortfolioPage/PortfolioPage";
 import{SinglePortfolioPage} from "./components/SinglePortfolioPage/SinglePortfolioPage";
 import Footer from "./components/ui/footer";
-
+import {PhotographyPage} from "./components/PhotographyPage/PhotographyPage";
+import {Skills} from "./components/Skills/Skills";
 
 
 
@@ -20,6 +21,8 @@ export const PortfolioRouter = () =>{
             <Route path="/singlePortfolio" element={<SinglePortfolioPage/>}/>
             <Route path="/categories" element={<Footer />} />
             <Route path="/ResumePage" element={<ResumePage />} />
+            <Route path="/PhotographyPage" element={<PhotographyPage/>}/>
+            <Route path="/Skills" element ={<Skills/>}/>
             </Routes>
         </Router>
     );

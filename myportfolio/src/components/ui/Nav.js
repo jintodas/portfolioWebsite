@@ -1,21 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Footer from "../ui/footer"
+
+
+
 
 const Wrapper = styled.div`
+  height:80px;
   display: flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
   background-color:#ffff;
   font-color:white;
+  margin:0 50px ;
   @media only screen and (max-width: 380px) {
     padding: 10px 10px;
   }
 `;
-
 const Left = styled.div``;
-
 const Center = styled.div`
   text-align: center;
 `;
@@ -24,6 +28,7 @@ const Menu = styled.div`
   display: flex;
   list-style: none;
   z-index: 10;
+  padding:0 10px;
 `;
 
 const Logo = styled.div`
@@ -32,6 +37,7 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
+
 `;
 
 const MenuItem = styled.div`
@@ -45,7 +51,10 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  align-items:space-between;
+  justify-content:pace-between;
 `;
+
 
 const Nav = () => {
     return (
@@ -53,7 +62,7 @@ const Nav = () => {
         <Left>
           <Link to="/">
             <Logo>
-              <img src={Image} className="w-100" alt="logo"></img>
+              <img src="images/logo.png" className="w-100" alt="home"></img>
             </Logo>
           </Link>
         </Left>
@@ -64,38 +73,53 @@ const Nav = () => {
               style={{ color: "inherit", textDecoration: "inherit" }}>
               <MenuItem>Portfolio</MenuItem>
             </Link>
-         
-            <Link
-              to="PhotographyPage"
-              style={{ color: "inherit", textDecoration: "inherit" }}>
-              <MenuItem>Photography</MenuItem>
-            </Link>
-         
-         {/* <MenuItem>Photography</MenuItem> */}
-     
-         <Link
-              to="/categories"
-              style={{ color: "inherit", textDecoration: "inherit" }}>
-              <MenuItem>Contact</MenuItem>
-            </Link>
+
+            <Link to="/ResumePage" style={{ textDecoration: "none" }}>
+          <MenuItem>CV</MenuItem>
+          </Link>
   
           </Menu>
         </Center>
         <Right>
           
-          <Link to="/ResumePage" style={{ textDecoration: "none" }}>
         
-          <MenuItem>CV</MenuItem>
+       <Menu>  
+          <a
+          href="https://www.linkedin.com/in/jintodas"
+          target="_blank"
+           rel="noreferrer"
+            >
+          <img
+            src="./images/Linkedin.png"
+            alt="Linkedin "
+            className="icon"
+             />
+            </a></Menu>
+     
+ 
           
-          </Link>
-          <Link to="/accountpage" style={{ textDecoration: "none" }}>
-          <MenuItem>Github</MenuItem>
-          </Link>
-  
-          <Link to="/cart" style={{ textDecoration: "none" }}>
-          <MenuItem>LinkedIn</MenuItem>
-          </Link>
-          
+          <Menu>
+          <a href="https://github.com/jintodas" target="_blank" rel="noreferrer">
+           <img
+             src="./images/github.jpg"
+             alt="github"
+             className="tech-icon"
+            />
+          </a>
+          </Menu>   
+
+
+                 
+          <Menu>
+        <a href="https://www.flickr.com/photos/75216710@N08/albums" target="_blank" rel="noreferrer">
+           <img
+             src="./images/photography.png"
+             alt="flickr"
+             className="tech-icon"
+            />
+          </a>
+      </Menu>     
+
         </Right>
       </Wrapper>
     );

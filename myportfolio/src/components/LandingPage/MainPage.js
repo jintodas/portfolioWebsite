@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import photo from "../LandingPage/photo4.png"
+import photo from "../LandingPage/photo22.png"
 import ProfilePhoto from "../LandingPage/profilephoto.jpg"
 
 
 
 
 const Container = styled.div`
+display:flex;
 height: calc(100vh-10px);
 background-color:black;
 display: flex;
@@ -18,6 +19,7 @@ background-image:url(${photo});`
 
 
 const Left = styled.div`
+display:flex;
 width: 50%;
 height:100vh;
 background-color: none;
@@ -30,12 +32,15 @@ justify-content: center;
 `
 
 const Title = styled.h1`
-font-size: 50px;
-margin-bottom: 80px;
+display:flex;
+font-size: 2rem;
+margin:50px 80px;
 z-index: 10;
+align-item:center;
 
 `
 const Right = styled.div`
+display:flex;
 height:100vh;
 width: 50%;
 background-color: none;
@@ -44,6 +49,7 @@ font-size:6rem;
 `
 
 const CoverPhoto = styled.div`
+display:flex;
 margin-top:100px;
 width : 320px;
 height:400px;
@@ -66,8 +72,11 @@ export const MainPage =() =>{
        
     <Container>
    <Left><Title>
-    <h2>Hey! Wellcome</h2>
-    </Title></Left>
+    <h2>Hey! Welcome.</h2>
+
+    </Title>
+    <Title> <h4>   I am Jinto L. Das, a Frontend Developer. I love to write code and free time love to travel and take photos.</h4></Title>
+    </Left>
 
     <Right>
     <CoverPhoto></CoverPhoto>
