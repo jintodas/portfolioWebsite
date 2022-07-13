@@ -1,27 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import photo from "../LandingPage/photo25.png"
-import ProfilePhoto from "../LandingPage/profilephoto.jpg"
 
 const Container = styled.div`
+display:flex;
 flex-direction: row;
 flex-wrap: wrap;
+height:100%;
 max-width: 100%;
-display:flex;
-height:850px;
-background-color:#3c5d5d;
-// background-image:url(${photo});`
+background-color:#041f80;
+justify-content: space-around;
+`
 
 
 const Right = styled.div`
 display:flex;
 flex-direction:row;
-height:100vh;
+flex-wrap: wrap;
+height:100%;
 width: 100%;
 background-color: none;
-color: white;
-font-size:2rem;
+color: black;
+font-size:1.5rem;
 justify-content: space-around;
 
 `
@@ -29,15 +29,16 @@ justify-content: space-around;
 const BigTitle = styled.h1`
 display:flex;
 flex-direction:row;
-font-size:;
+flex-wrap: wrap;
 justify-content:center;
 margin-top:0;
 margin:auto;
-color:white;
-height:120px;
+color:black;
+height:100px;
 width:100%;
-background-color:#064646;
-font-size:2rem
+background-color:#ffff;
+//background-color:#064646;
+font-size:1.5rem
 
 `;
 
@@ -53,6 +54,8 @@ const Card1 = styled.div`
     background-color:none; 
     font-size: 1.5rem;
     margin-top:70px;
+    color:white;
+
 `
 
 const Card2 = styled.div`
@@ -67,6 +70,7 @@ const Card2 = styled.div`
     background-color:none;
     font-size: 1.5rem;
     margin-top:70px;
+    color:white;
 
 `
 
@@ -82,6 +86,8 @@ const Card3 = styled.div`
     background-color:none; 
     font-size: 1.5rem; 
     margin:70px;
+    color:white;
+
  
 `
 

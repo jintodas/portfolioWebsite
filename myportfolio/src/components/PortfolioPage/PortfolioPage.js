@@ -4,32 +4,29 @@ import { Link } from 'react-router-dom';
 import PortfolioPhoto from "../LandingPage/photo12.png"
 import AframeCoverPhoto from "../PortfolioPage/Aframe.png"
 import FideleoCoverPhoto from "../PortfolioPage/Fideleo.png"
+import CityTour from "../PortfolioPage/CityTour.png"
+
 
 const CardsContainer = styled.div`
   display:flex;
   flex-direction:row;
-  height:1200px;
+  height:100%;
   max-width:100%;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color:#085e48;
-  // background-image:url(${PortfolioPhoto});
+  background-color:#020d36;
 `;
-const linkStyle = {
-  textDecoration: "none",
-};
+
 const BigTitle = styled.h1`
-  disålay:flex;
-  alingn-item:center;
-  text-align: center;
-  font-size: 4rem;
-  text-color: white;
-  color:white;
-  height:120px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  font-size: 3rem;
+  height:100px;
   width:100%;
-  background-color:#064636;
-  color:#ffff;
-  margin-top:0;
+  background-color:#ffff;
+ // background-color:#064636;
+ color:black;
 `;
 
 const Card1 = styled.div`
@@ -37,14 +34,14 @@ const Card1 = styled.div`
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 700px;
+    width: 600px;
     height:400px;
     margin: 20px 0;
     box-shadow: 2px 2px 10px 5px grey;
     cursor: pointer;
     background-color:#fff; 
     background-image:url(${FideleoCoverPhoto});
-    font-size: 2rem;
+    font-size: 1.5rem;
 `
 
 const Card2 = styled.div`
@@ -52,13 +49,14 @@ const Card2 = styled.div`
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 700px;
+    width: 600px;
     height:400px;
     margin: 20px 0;
-    box-shadow: 2px 2px 10px 5px grey;
+    box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
-    background-color:#fff;
-    font-size: 2rem;
+    background-color:none;
+    font-size: 1.5rem;
+    color:white;
 `
 
 const Card3 = styled.div`
@@ -66,13 +64,14 @@ const Card3 = styled.div`
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 700px;
+    width: 600px;
     height:400px;
     margin: 20px 0;
-    box-shadow: 2px 2px 10px 5px grey;
+    box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
-    background-color:#fff; 
-    font-size: 2rem; 
+    font-size: 1.5rem; 
+    color:white;
+    
 `
 
 const Card4 = styled.div`
@@ -80,15 +79,30 @@ const Card4 = styled.div`
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 700px;
+    width: 600px;
     height:400px;
     margin: 20px 0;
-    box-shadow: 2px 2px 10px 5px grey;
+    box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
     background-color:#fff;
     background-image:url(${AframeCoverPhoto});
     font-color: #ffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
+`
+const Card5 = styled.div`
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    height:400px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 10px 5px white;
+    cursor: pointer;
+    background-color:#fff;
+    background-image:url(${CityTour});
+    font-color: #ffff;
+    font-size: 1.5rem;
 `
 
 export const PortfolioPage =() =>{
@@ -115,6 +129,10 @@ export const PortfolioPage =() =>{
           <h2> Aframe Shooting Game</h2>
         </Card4>
         
+
+        <Card5>
+          <h2>City Tour</h2>
+        </Card5>
         </CardsContainer>
         
        

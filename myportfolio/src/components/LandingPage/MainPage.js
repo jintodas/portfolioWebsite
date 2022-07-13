@@ -2,19 +2,37 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import photo from "../LandingPage/photo22.png"
-import ProfilePhoto from "../LandingPage/profilephoto.jpg"
-
-
+import photoTablet from "../LandingPage/photo222.png"
+import photoMobile from "../LandingPage/photo2222.png"
 
 
 const Container = styled.div`
 display:flex;
-height: calc(100vh-10px);
+height:90vh;
+max-width:100%;;
 background-color:black;
 display: flex;
+flex-wrap: wrap;
 overflow: hidden;
 backgorund-color: black;
-background-image:url(${photo});`
+background-image:url(${photoTablet});
+
+@media only screen and (max-width:1025px) {  
+    font-size:10px;
+    padding:10px;
+    opacity: 1;
+    background-image:url(${photoTablet});
+ };
+
+@media only screen and (max-width:380px) {  
+    font-size:10px;
+    padding:10px;
+    opacity: 1;
+    background-image:url(${photoMobile});
+ }
+
+`
+
 
 
 
@@ -41,7 +59,7 @@ align-item:center;
 `
 const Right = styled.div`
 display:flex;
-height:100vh;
+height:100%;
 width: 50%;
 background-color: none;
 color: white;
@@ -55,17 +73,10 @@ width : 320px;
 height:400px;
 color: white;
 display: flex;
+flex-wrap: wrap;
 flex-direction: column;
 align-items: right;
 `
-const Portfolio = styled.div`
-// height: calc(100vh-10px);
-background-color:black;
-display: flex;
-padding:20px;
-overflow: hidden;
-//background-image:url(${photo});`
-
 
 export const MainPage =() =>{
     return(
@@ -78,15 +89,7 @@ export const MainPage =() =>{
     <Title> <h4>   I am Jinto L. Das, a Frontend Developer. I love to write code and free time love to travel and take photos.</h4></Title>
     </Left>
 
-    <Right>
-    <CoverPhoto></CoverPhoto>
-    
-    </Right>
-
- 
-
-
-        </Container>
+     </Container>
 
      
     )
