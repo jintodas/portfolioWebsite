@@ -2,35 +2,58 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import photo from "../LandingPage/photo22.png"
-import photoTablet from "../LandingPage/photo222.png"
-import photoMobile from "../LandingPage/photo2222.png"
+import photoMobile from "../LandingPage/profileMobile.png"
+import photoTablet from "../LandingPage/profileTablet.png"
+import photoIpadpro from "../LandingPage/photoIpadpro.png"
+import photoLaptop from "../LandingPage/laptop.png"
 
 
 const Container = styled.div`
 display:flex;
 height:90vh;
 max-width:100%;;
-background-color:black;
-display: flex;
 flex-wrap: wrap;
 overflow: hidden;
-backgorund-color: black;
-background-image:url(${photoTablet});
+background-image:url(${photo});
 
-@media only screen and (max-width:1025px) {  
+@media only screen and (max-width:1200px) { 
+    display: flex;
+    flex-wrap: wrap; 
     font-size:10px;
-    padding:10px;
+    padding:1rem;
+    opacity: 1;
+    background-image:url(${photoLaptop});
+ };
+
+@media only screen and (max-width:1024px) { 
+    display: flex;
+    flex-wrap: wrap; 
+    font-size:10px;
+    padding:1rem;
+    opacity: 1;
+    background-image:url(${photoIpadpro});
+ };
+
+@media only screen and (max-width:768px) { 
+    display: flex;
+    flex-wrap: wrap; 
+    font-size:10px;
+    padding:1rem;
     opacity: 1;
     background-image:url(${photoTablet});
  };
 
-@media only screen and (max-width:380px) {  
-    font-size:10px;
-    padding:10px;
+
+@media only screen and (max-width:390px) { 
+    display: flex;
+    height:90vh;
+    flex-wrap: wrap;
+    max-width:100%;; 
+    font-size:1rem;
+    padding:1rem;
     opacity: 1;
     background-image:url(${photoMobile});
- }
-
+ };
 `
 
 

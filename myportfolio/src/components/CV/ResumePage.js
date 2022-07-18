@@ -3,31 +3,54 @@ import styled from "styled-components";
 import Nav from "../ui/Nav";
 import Footer from "../ui/footer"
 import ResumeImage  from '../CV/resume.png';
+import resumeMobile from '../CV/resumeMobile.png';
+import resumeIpad from '../CV/resumeIpad.png';
 
 const Container = styled.div`
+  flex-direction:row;
   height:1500px;
-  width:100%
+  width:100%;
   flex-wrap: wrap;
-  justify-comntent:center;
-  background-color:#ffff;
-  align-items;
+  justify-content:center;
+  background-color:#020d36;
+  align-item:center;
+  margin:auto;
 `;
 
 
 const Title =styled.div`
+display:flex;
+flex-direction:row;
 height:100px;
-width:100%
-margin:auto;
 flex-wrap: wrap;
-background-color:#ffff;
-text-align:center;
+background-color:#020d36;
+justify-content:center;
+align-item:center;
 font-size:4em;
+margin:auto;
 margin:20px 10px;
+color:white;
+
+
+@media only screen and (max-width:390px) { 
+  padding:1rem;
+  opacity:1;
+  height:20px;
+  font-size:4em;
+};
+
+@media only screen and (max-width:1024px) { 
+  padding:1rem;
+  opacity:1;
+  height:30px;
+  font-size:4em;
+};
+
 `
 
 const CV = styled.div`
     display: flex;
-    flex-direction:row;
+    flex-direction:row
     justify-content:center;
     align-item:center;
     flex-wrap: wrap;
@@ -38,9 +61,28 @@ const CV = styled.div`
     cursor: pointer;
     background-color:#fff; 
     background-image:url(${ResumeImage});
-    align-items:center;
     margin:auto;
+
+     @media only screen and (max-width:390px) { 
+      padding:1rem;
+      opacity: 1;
+      height:80%;
+      margin:10px 10px;
+      background-image:url(${resumeMobile});
+  
+   };
+
+   @media only screen and (max-width:1024px) { 
+    padding:1rem;
+    opacity: 1;
+    height:80%;
+    margin:10px 10px;
+    background-image:url(${resumeIpad});
+    margin:auto;
+ };
+
 `
+
 
   export const ResumePage =() =>{
   return (

@@ -6,7 +6,6 @@ import { About } from "../About/About";
 import {PortfolioPage} from "../PortfolioPage/PortfolioPage"
 import Footer from "../ui/footer"
 import { ResumePage } from "../CV/ResumePage";
-import{Skills} from "../Skills/Skills"
 
 export const LandingPage =() =>{
   return (

@@ -8,7 +8,7 @@ flex-direction: row;
 flex-wrap: wrap;
 height:100%;
 max-width: 100%;
-background-color:#041f80;
+background-color:#131417;
 justify-content: space-around;
 `
 
@@ -31,15 +31,13 @@ display:flex;
 flex-direction:row;
 flex-wrap: wrap;
 justify-content:center;
-margin-top:0;
 margin:auto;
 color:black;
 height:100px;
 width:100%;
-background-color:#ffff;
-//background-color:#064646;
-font-size:1.5rem
-
+background-color:#131417;
+color:#ffff;
+font-size:1.5rem;
 `;
 
 const Card1 = styled.div`
@@ -48,13 +46,23 @@ const Card1 = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     width: 350px;
-    height:500px;
+    height:450px;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
     background-color:none; 
-    font-size: 1.5rem;
-    margin-top:70px;
+    font-size: 1rem;
+    margin:auto;
+    margin:40px;
     color:white;
+
+    @media only screen and (max-width:390px) { 
+      padding:1rem;
+      opacity: 1;
+      height:600px;
+    
+  
+   };
+
 
 `
 
@@ -64,12 +72,12 @@ const Card2 = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     width: 350px;
-    height:500px;
+    height:450px;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
     background-color:none;
-    font-size: 1.5rem;
-    margin-top:70px;
+    font-size: 1rem;
+    margin:40px;
     color:white;
 
 `
@@ -80,12 +88,12 @@ const Card3 = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     width: 350px;
-    height:500px;
+    height:450px;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
     background-color:none; 
-    font-size: 1.5rem; 
-    margin:70px;
+    font-size: 1rem; 
+    margin:40px;
     color:white;
 
  

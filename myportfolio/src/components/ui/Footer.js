@@ -9,10 +9,10 @@ const Wrapper = styled.div`
   align-items: center;
   background-color:#ffff;
   font-color:white;
-  margin:0 50px;
+  margin:10px 10px;
 
   @media only screen and (max-width: 380px) {
-    padding: 10px 10px;
+    padding: 0px 10px;
 
   }
 `;
@@ -28,6 +28,13 @@ const Menu = styled.div`
   list-style: none;
   z-index: 10;
   margin-right:10px;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s linear;
+    line-height: .5rem;
+  }
 `;
 
 const Logo = styled.div`
@@ -36,12 +43,19 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s linear;
+    line-height: .5rem;
+  }
 `;
 
 const MenuItem = styled.div`
   font-size: 1.05rem;
   cursor: pointer;
-  margin-left: 25px;
+  margin-left: 10px;
   color: black;
 `;
 
@@ -49,6 +63,7 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
 `;
 
 const Footer = () => {
@@ -74,7 +89,7 @@ const Footer = () => {
         <Right>
            
            
-          <Menu>
+          {/* <Menu>
           <a href="https://github.com/jintodas" target="_blank" rel="noreferrer">
            <img
              src="./images/github.jpg"
@@ -82,10 +97,10 @@ const Footer = () => {
              className="tech-icon"
             />
           </a>
-          </Menu>
+          </Menu> */}
          
 
-          <Menu>  
+          {/* <Menu>  
           <a
           href="https://www.linkedin.com/in/jintodas"
           target="_blank"
@@ -97,8 +112,8 @@ const Footer = () => {
             className="icon"
              />
             </a></Menu>
-         
-        
+          */}
+{/*         
           <Menu>
         <a href="https://www.flickr.com/photos/75216710@N08/albums" target="_blank" rel="noreferrer">
            <img
@@ -107,9 +122,9 @@ const Footer = () => {
              className="tech-icon"
             />
           </a>
-      </Menu>
+      </Menu> */}
 
-      <Menu>
+      {/* <Menu>
         <a href="https://www.instagram.com/pixart.se/" target="_blank" rel="noreferrer">
            <img
              src="./images/Instagram.png"
@@ -117,7 +132,7 @@ const Footer = () => {
              className="tech-icon"
             />
           </a>
-      </Menu>
+      </Menu> */}
 
           <MenuItem>Copy-Right @ Jinto L. Das, 2022</MenuItem>
         

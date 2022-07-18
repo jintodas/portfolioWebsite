@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Footer from "../ui/footer"
-
 
 
 
@@ -14,7 +12,7 @@ const Wrapper = styled.div`
   align-items: center;
   background-color:#ffff;
   font-color:white;
-  margin:0 50px ;
+  margin:0 0px ;
   @media only screen and (max-width: 380px) {
     padding: 10px 10px;
   }
@@ -29,6 +27,16 @@ const Menu = styled.div`
   list-style: none;
   z-index: 10;
   padding:0 10px;
+
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s linear;
+    line-height: .5rem;
+  }
+
+  
 `;
 
 const Logo = styled.div`
@@ -37,6 +45,13 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s linear;
+    line-height: .5rem;
+  }
 
 `;
 
@@ -45,6 +60,14 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-left: 25px;
   color: black;
+
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s linear;
+    line-height: .5rem;
+  }
 `;
 
 const Right = styled.div`
@@ -53,6 +76,8 @@ const Right = styled.div`
   justify-content: flex-end;
   align-items:space-between;
   justify-content:pace-between;
+
+
 `;
 
 
