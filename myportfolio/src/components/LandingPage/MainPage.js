@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import photo from "../LandingPage/photo22.png"
 import photoMobile from "../LandingPage/profileMobile.png"
 import photoTablet from "../LandingPage/profileTablet.png"
 import photoIpadpro from "../LandingPage/photoIpadpro.png"
-import photoLaptop from "../LandingPage/laptop.png"
+import photoLaptop from "../LandingPage/photoLaptop.png"
+import photoDesktop from "../LandingPage/desktop.png"
 
 
 const Container = styled.div`
@@ -14,9 +14,9 @@ height:90vh;
 max-width:100%;;
 flex-wrap: wrap;
 overflow: hidden;
-background-image:url(${photo});
+background-image:url(${photoDesktop});
 
-@media only screen and (max-width:1200px) { 
+@media only screen and (max-width:1600px) { 
     display: flex;
     flex-wrap: wrap; 
     font-size:10px;
@@ -44,7 +44,7 @@ background-image:url(${photo});
  };
 
 
-@media only screen and (max-width:390px) { 
+@media only screen and (max-width:481px) { 
     display: flex;
     height:90vh;
     flex-wrap: wrap;
@@ -55,7 +55,6 @@ background-image:url(${photo});
     background-image:url(${photoMobile});
  };
 `
-
 
 
 

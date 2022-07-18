@@ -12,8 +12,8 @@ export const LandingPage =() =>{
     <>
       <Nav/>
       <MainPage/>
-      <About/>
       <PortfolioPage/>
+      <About/>
       <Footer/>
       
     </>
