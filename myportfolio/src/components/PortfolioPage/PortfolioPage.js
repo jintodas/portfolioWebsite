@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import AframeCoverPhoto from "../PortfolioPage/Aframe.png"
 import FideleoCoverPhoto from "../PortfolioPage/Fideleo.png"
 import CityTour from "../PortfolioPage/CityTour.png"
@@ -11,6 +10,7 @@ import CityTourMobile from "../PortfolioPage/CityTourMobile.png"
 import AframeMobile  from "../PortfolioPage/AframeMobile.png"
 import pixart from "../PortfolioPage/pixart.png"
 import pixartMobile from "../PortfolioPage/pixartMobile.png"
+import "./style/style.css";
 
 
 const CardsContainer = styled.div`
@@ -21,6 +21,7 @@ const CardsContainer = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   background-color:#131417;
+  color:#ffff;
 `;
 
 const BigTitle = styled.h1`
@@ -145,8 +146,8 @@ const Card5 = styled.div`
     font-size: 1.5rem;
      
       @media only screen and (max-width:390px) { 
-      display: flex;
-      flex-wrap: wrap; 
+      display:flex;
+      flex-wrap:wrap; 
       font-size:10px;
       padding:1rem;
       opacity: 1;
@@ -164,11 +165,13 @@ justify-content:center;
 flex-wrap: wrap;
 align-item:bottom:
 margin:auto;
-color:white;
+text-color:#ffff;
+font-size:1.5rem;
+text-decoration:none;
+margin-top:0px;
 
 &:hover {
   transform: scale(1.1);
-  text-decoration: none;
   font-weight: 600;
   transition: 0.2s linear;
   line-height: .5rem;
@@ -186,7 +189,7 @@ export const PortfolioPage =() =>{
         <Card1>
           <h2> Ecommerce Website </h2>
           <GitHub>
-          <a href="https://github.com/jintodas/ExploringCodeProject" target="_blank" rel="noreferrer"> Checkout the project inGithub</a>
+          <a  class="linktoGithub" href="https://github.com/jintodas/ExploringCodeProject" target="_blank"  rel="noreferrer"  > Checkout the project in Github</a>
           </GitHub>
         </Card1>
 
@@ -194,7 +197,7 @@ export const PortfolioPage =() =>{
           <h2> Pixart</h2>
           <h3></h3>
           <GitHub>
-          <a href="https://github.com/jintodas/Virtual-City-Tour">Checkout project in Github</a>    
+          <a class="linktoGithub" href="https://github.com/jintodas/Virtual-City-Tour" target="_blank"  rel="noreferrer" > Checkout the project in Github</a>    
           </GitHub>
         </Card2>
         
@@ -202,7 +205,7 @@ export const PortfolioPage =() =>{
         <Card3>
         <h1>Phaser Game</h1>
        <GitHub>
-        <a href="https://github.com/Harry-Yates/PhaserGame-RPG-Caves"> Checkout project in Github</a>
+        <a   class="linktoGithub" href="https://github.com/Harry-Yates/PhaserGame-RPG-Caves"target="_blank"  rel="noreferrer" > Checkout the project in Github</a>
        </GitHub>
 
         </Card3>
@@ -210,7 +213,7 @@ export const PortfolioPage =() =>{
         <Card4>
           <h2>Shooting Game</h2>
           <GitHub>
-          <a href="https://github.com/jintodas/ExploringCodeProject"> Checkout project in Github</a>
+          <a  class="linktoGithub" href="https://github.com/jintodas/ExploringCodeProject" target="_blank"  rel="noreferrer" > Checkout the project in Github</a>
           </GitHub>
         </Card4>
         
@@ -219,13 +222,10 @@ export const PortfolioPage =() =>{
           <h2>City Tour</h2>
       
           <GitHub>
-          <a href="https://github.com/jintodas/Virtual-City-Tour"> Checkout project in Github</a>
+          <a   class="linktoGithub" href="https://github.com/jintodas/Virtual-City-Tour"> Checkout the project in Github</a>
           </GitHub>
         </Card5>
         </CardsContainer>
-        
-       
-   
           
          </> 
     );

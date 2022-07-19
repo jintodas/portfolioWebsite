@@ -7,13 +7,12 @@ import { Link } from "react-router-dom";
 const Wrapper = styled.div`
   height:80px;
   display: flex;
+  width:100%;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
-  background-color:#ffff;
-  font-color:white;
-  margin:0 0px ;
-  @media only screen and (max-width: 380px) {
+  background-color:none;
+  @media only screen and (max-width: 481px) {
     padding: 10px 10px;
   }
 `;

@@ -6,6 +6,8 @@ import photoTablet from "../LandingPage/profileTablet.png"
 import photoIpadpro from "../LandingPage/photoIpadpro.png"
 import photoLaptop from "../LandingPage/photoLaptop.png"
 import photoDesktop from "../LandingPage/desktop.png"
+import Nav from "../ui/Nav";
+
 
 
 const Container = styled.div`
