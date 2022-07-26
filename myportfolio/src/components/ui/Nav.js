@@ -26,6 +26,7 @@ const Menu = styled.div`
   list-style: none;
   z-index: 10;
   padding:0 10px;
+  margin:20px 20px;
 
   &:hover {
     transform: scale(1.1);
@@ -44,6 +45,7 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
+  margin-left:50px;
   &:hover {
     transform: scale(1.1);
     text-decoration: none;

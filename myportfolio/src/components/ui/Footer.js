@@ -40,6 +40,7 @@ const Menu = styled.div`
 const Logo = styled.div`
   width: 60px;
   height: 40px;
+  margin-left:50px;
   display: flex;
   align-items: center;
   justify-items: center;
