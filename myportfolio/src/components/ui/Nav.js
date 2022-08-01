@@ -13,20 +13,19 @@ const Wrapper = styled.div`
   align-items: center;
   background-color:none;
   @media only screen and (max-width: 481px) {
-    padding: 10px 10px;
+    padding: 0px;
+    margin:10px 10px ;
   }
 `;
 const Left = styled.div``;
-const Center = styled.div`
-  text-align: center;
-`;
 
 const Menu = styled.div`
   display: flex;
   list-style: none;
   z-index: 10;
   padding:0 10px;
-  margin:20px 20px;
+  margin:10px 10px;
+  color:white;
 
   &:hover {
     transform: scale(1.1);
@@ -34,7 +33,11 @@ const Menu = styled.div`
     font-weight: 600;
     transition: 0.2s linear;
     line-height: .5rem;
-  }
+  }:
+
+  @media only screen and (max-width: 390px) {
+    margin:10px 10px;
+  }:
 
   
 `;
@@ -55,28 +58,17 @@ const Logo = styled.div`
   }
 
 `;
-
-const MenuItem = styled.div`
-  font-size: 1.05rem;
-  cursor: pointer;
-  margin-left: 25px;
-  color: black;
-
-  &:hover {
-    transform: scale(1.1);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.2s linear;
-    line-height: .5rem;
-  }
-`;
-
+  
 const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
   align-items:space-between;
   justify-content:pace-between;
+
+  @media only screen and (max-width: 390px) {
+    margin:0px 0px;
+  }:
 
 
 `;
@@ -88,28 +80,22 @@ const Nav = () => {
         <Left>
           <Link to="/">
             <Logo>
-              <img src="images/logo.png" className="w-100" alt="home"></img>
+              <img src="images/logo.jpg" className="w-100" alt="home"></img>
             </Logo>
           </Link>
         </Left>
-        <Center>
-          <Menu>
-            <Link
-              to="/PortfolioPage"
-              style={{ color: "inherit", textDecoration: "inherit" }}>
-              <MenuItem>Portfolio</MenuItem>
-            </Link>
-
-            <Link to="/ResumePage" style={{ textDecoration: "none" }}>
-          <MenuItem>CV</MenuItem>
-          </Link>
-  
-          </Menu>
-        </Center>
+       
         <Right>
-          
-        
        <Menu>  
+       <Link to="/ResumePage" style={{ textDecoration: "none" }}>
+          <img
+            src="./images/cv.png"
+            alt="Linkedin "
+            className="icon"
+             />
+          </Link>
+          </Menu>
+          <Menu>  
           <a
           href="https://www.linkedin.com/in/jintodas"
           target="_blank"
@@ -127,7 +113,7 @@ const Nav = () => {
           <Menu>
           <a href="https://github.com/jintodas" target="_blank" rel="noreferrer">
            <img
-             src="./images/github.jpg"
+             src="./images/github.PNG"
              alt="github"
              className="tech-icon"
             />
@@ -139,7 +125,7 @@ const Nav = () => {
           <Menu>
         <a href="https://www.flickr.com/photos/75216710@N08/albums" target="_blank" rel="noreferrer">
            <img
-             src="./images/photography.png"
+             src="./images/camera.png"
              alt="flickr"
              className="tech-icon"
             />

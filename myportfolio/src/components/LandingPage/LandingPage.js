@@ -10,7 +10,6 @@ import { ResumePage } from "../CV/ResumePage";
 export const LandingPage =() =>{
   return (
     <>
-      <Nav/>
       <MainPage/>
       <PortfolioPage/>
       <About/>

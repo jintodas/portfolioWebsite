@@ -189,6 +189,9 @@ export const PortfolioPage =() =>{
         <Card1>
           <h2> Ecommerce Website </h2>
           <GitHub>
+          <a  class="linktoGithub" href="https://fidelio.netlify.app/" target="_blank"  rel="noreferrer"  > website</a>
+          </GitHub>
+          <GitHub>
           <a  class="linktoGithub" href="https://github.com/jintodas/ExploringCodeProject" target="_blank"  rel="noreferrer"  > Checkout the project in Github</a>
           </GitHub>
         </Card1>

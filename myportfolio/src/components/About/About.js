@@ -130,19 +130,19 @@ export const About =() =>{
 
   <Card1>
     <h2>TECH SKILLS</h2>
-       <Para> HTML, CSS,JavaScript ES6,  Flexbox,  Responsive Design, SCSS,
-       React, Node.js, Mongo DB, Express.js, REST API, Styled Components,  Phaser 3, Aframe
+       <Para> HTML, CSS, JavaScript, Flexbox, SCSS,
+       React, Node.js, Mongo DB, Express.js, Phaser 3, Aframe
      </Para>
    </Card1>
 
       <Card2>
         <h2>SOFT SKILLS</h2>
-        <Para> Agile, Kanban, Mob-Programming, Pair-Programming,  Web-Accessibility, Desgin Sprint, UX Design</Para>
+        <Para> Agile, Kanban, Pair-Programming,  Web-Accessibility, Desgin Sprint, UX Design</Para>
     </Card2>
 
     <Card3>
       <h2>TOOLS</h2>
-      <Para> Visual Studio, Github, Figma, Slack, Miro, Terminal, Adobe Photoshop, Lightroom, Titled-Map Editor</Para>
+      <Para> Visual Studio, Github, Figma, Slack, Miro, Adobe Photoshop, Lightroom, Titled-Map Editor</Para>
     </Card3>
 
     </Right>
