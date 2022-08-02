@@ -10,7 +10,7 @@ const Container = styled.div`
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-height:100%;
+height:100vh;
 max-width: 100%;
 background-color:#131417;
 justify-content: space-around;
@@ -51,7 +51,7 @@ justify-content: space-around;
 @media only screen and (max-width:481px) { 
     max-width: 100%;
     display: flex;
-    height:90vh;
+    height:100vh;
     flex-wrap: wrap;
     max-width:100%;; 
     font-size:1rem;
@@ -90,7 +90,7 @@ justify-content: center;
 @media only screen and (max-width:481px) { 
     display: flex;
     max-width:100%; 
-    height:350px;
+    height:200px;
     flex-wrap: wrap;
     font-size:1rem;
     padding:1rem;
@@ -104,7 +104,7 @@ justify-content: center;
 const Title1 = styled.h1`
 display:flex;
 height:200px;
-font-size: 2rem;
+font-size: 1.5rem;
 align-item:center;
 color:#fa5d02;
 
@@ -113,7 +113,7 @@ color:#fa5d02;
     max-width:100%; 
     height:200px;
     flex-wrap: wrap;
-    font-size:1.5rem;
+    font-size:1rem;
     margin-top:0;
     padding:1rem;
     opacity: 1;
@@ -129,14 +129,14 @@ width:45%;
 background-color: none;
 
 @media only screen and (max-width:768px) { 
-    display: flex;
-    width:45%; 
-    height:600px;
+    display: flex; 
+    height:500px;
     flex-wrap: wrap; 
     padding:1rem;
     opacity: 1;
-    margin-bottom:20px;
+    height:400px;
     margin:auto;
+    
 };
 
 
@@ -145,13 +145,11 @@ background-color: none;
     width:100%; 
     flex-wrap: wrap; 
     margin:auto;
-    padding:1rem;
+    padding:1.5rem;
     opacity: 1;
-    height:500px;
+    height:400px;
     margin:auto;
-    margin-bottom:20px;
  }; 
-
 
 `
 
@@ -182,7 +180,6 @@ background-image:url(${ProfilePhoto});
     margin:10px 10px;
     background-image:url(${ProfilePhoto})
  }; 
-
 `
 
 
@@ -218,7 +215,7 @@ export const MainPage =() =>{
    <Left>
     <Card1>
        <Title1>
-          <h3>Hey! It is Jinto Lal Das. An aspiring..<h1>Frontend Developer</h1> </h3>
+          <h3>Hey! This is Jinto L. Das. An aspiring..<h1>FRONTEND DEVELOPER</h1></h3>
        </Title1>
     </Card1>
     </Left>

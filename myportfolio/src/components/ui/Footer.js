@@ -3,24 +3,40 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-  height:200px;
+  height:100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#ffff;
+  background-color:#131417;;
   font-color:white;
-  margin:10px 10px;
+
+  font-size:1rem;
+  color:white;
 
   @media only screen and (max-width: 380px) {
     padding: 0px 10px;
+    font-size:1rem;
 
-  }
+  };
 `;
 
-const Left = styled.div``;
+const Left = styled.div`
+@media only screen and (max-width: 380px) {
+  padding: 0px 10px;
+  font-size:.7rem;
+
+};
+`;
 
 const Center = styled.div`
   text-align: center;
+
+  @media only screen and (max-width: 380px) {
+    padding: 0px 10px;
+    font-size:.5rem;
+  
+  };
+  
 `;
 
 const Menu = styled.div`
@@ -28,6 +44,12 @@ const Menu = styled.div`
   list-style: none;
   z-index: 10;
   margin-right:10px;
+  font-size:.7rem;
+  @media only screen and (max-width: 380px) {
+    padding: 0px 10px;
+    font-size:.5rem;
+  
+  };
   &:hover {
     transform: scale(1.1);
     text-decoration: none;
@@ -57,13 +79,27 @@ const MenuItem = styled.div`
   font-size: 1.05rem;
   cursor: pointer;
   margin-left: 10px;
-  color: black;
+  font-size:.7rem;
+  background-color:#131417;;
+  font-color:white;
+  margin-right:20px;
+  @media only screen and (max-width: 380px) {
+    padding:1rem;
+    font-size:.5rem;
+  
+  };
 `;
 
 const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media only screen and (max-width: 380px) {
+    padding: 0px 10px;
+    font-size:.5rem;
+  
+  };
 
 `;
 

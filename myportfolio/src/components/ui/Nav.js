@@ -90,6 +90,7 @@ const Right = styled.div`
   justify-content: flex-end;
   align-items:space-between;
   justify-content:pace-between;
+  margin-right:20px;
 
   @media only screen and (max-width: 390px) {
     margin:0px 0px;
@@ -105,13 +106,13 @@ const Nav = () => {
         <Left>
           <Link to="/">
             <Logo>
-              <img src="images/logo.jpg" className="w-100" alt="home"></img>
+              <img src="images/logo.png" className="w-100" alt="home"></img>
             </Logo>
           </Link>
         </Left>
        
         <Right>
-       <Menu>  
+       {/* <Menu>  
        <Link to="/ResumePage" style={{ textDecoration: "none" }}>
           <img
             src="./images/cv.png"
@@ -119,7 +120,7 @@ const Nav = () => {
             className="icon"
              />
           </Link>
-          </Menu>
+          </Menu> */}
           <Menu>  
           <a
           href="https://www.linkedin.com/in/jintodas"

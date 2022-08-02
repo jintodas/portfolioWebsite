@@ -29,7 +29,7 @@ const BigTitle = styled.h1`
   flex-direction:row;
   flex-wrap: wrap;
   justify-content:center;
-  font-size: 3rem;
+  font-size: 2rem;
   height:120px;
   width:100%;
   background-color:#131417;
@@ -40,13 +40,39 @@ const BigTitle = styled.h1`
   @media only screen and (max-width:390px) { 
     padding:1rem;
     opacity: 1;
-    height:50px;
+    height:30px;
     margin-bottom:10px;
-    margin-top:180px
+    margin-top:30px
+    font-size: 1.5rem;
  };
-
-
 `;
+
+
+const Description = styled.h4`
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content:center;
+  font-size:.7rem;
+  height:80px;
+  width:100%;
+  color:#ffff;
+  margin-top:288px;
+  background:white;
+  color:black;
+  padding:1rem;
+
+  @media only screen and (max-width:390px) { 
+    margin-top:182px;
+    font-size:.5rem;
+    height:50px;
+    width:100%;
+   
+    
+ };
+`;
+
+
 
 const Card1 = styled.div`
     display: flex;
@@ -56,6 +82,7 @@ const Card1 = styled.div`
     width: 600px;
     height:400px;
     margin: 20px 0;
+    margin-bottom:10px;
     box-shadow: 2px 2px 10px 5px grey;
     cursor: pointer;
     background-color:#fff; 
@@ -64,7 +91,8 @@ const Card1 = styled.div`
     color:#ffff;
 
     @media only screen and (max-width:390px) { 
-      padding:1rem;
+      width:400px;
+      height:300px;
       opacity: 1;
       height:250px;
       background-image:url(${FideleoMobile});
@@ -86,9 +114,7 @@ const Card2 = styled.div`
     background-image:url(${pixart});
 
     @media only screen and (max-width:390px) { 
-      padding:1rem;
       opacity: 1;
-      padding: 0 10px;
       height:250px;
       background-image:url(${pixartMobile});
    };
@@ -111,7 +137,6 @@ const Card3 = styled.div`
     background-image:url(${Phaser});
 
     @media only screen and (max-width:390px) { 
-      padding:1rem;
       opacity: 1;
       height:250px;
       background-image:url(${PhaserMobile});
@@ -129,13 +154,11 @@ const Card4 = styled.div`
     margin: 20px 0;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
-    background-color:#fff;
     background-image:url(${AframeCoverPhoto});
     font-color: #ffff;
     font-size: 1.5rem;
 
     @media only screen and (max-width:390px) { 
-      padding:1rem;
       opacity: 1;
       height:250px;
       background-image:url(${AframeMobile});
@@ -148,38 +171,31 @@ const Card5 = styled.div`
     flex-wrap: wrap;
     width: 600px;
     height:400px;
-    margin: 20px 0;
+    margin: 20px 0px;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
-    background-color:#fff;
     background-image:url(${CityTour});
     font-color: #ffff;
-    font-size: 1.5rem;
      
       @media only screen and (max-width:390px) { 
       display:flex;
-      flex-wrap:wrap; 
-      font-size:10px;
-      padding:1rem;
       opacity: 1;
       height:250px;
-      padding:0 10px;
-      margin:10p 0;
       background-image:url(${CityTourMobile});
    };
 `
 
 const GitHub = styled.div`
-width:100%;
+width:50%;
+height:30px;
 display: flex;
 justify-content:center;
 flex-wrap: wrap;
-align-item:bottom:
 margin:auto;
 text-color:#ffff;
-font-size:1.5rem;
+font-size:1rem;
 text-decoration:none;
-margin-top:0px;
+
 
 &:hover {
   transform: scale(1.1);
@@ -198,46 +214,68 @@ export const PortfolioPage =() =>{
         <BigTitle>PROJECTS</BigTitle>
 
         <Card1>
-          <h2> Ecommerce Website </h2>
+      
+          <Description>
+            <h3> TECH: HTML, CSS, React, Node.js, MonggoDB, Express, Bootstrap, Figma  </h3>
           <GitHub>
           <a  class="linktoGithub" href="https://fidelio.netlify.app/" target="_blank"  rel="noreferrer"  > website</a>
           </GitHub>
+  
           <GitHub>
-          <a  class="linktoGithub" href="https://github.com/jintodas/ExploringCodeProject" target="_blank"  rel="noreferrer"  > Checkout the project in Github</a>
+          <a  class="linktoGithub" href="https://github.com/jintodas/ExploringCodeProject" target="_blank"  rel="noreferrer"  > Github</a>
           </GitHub>
+          </Description>
         </Card1>
 
-        <Card2>
-          <h2> Pixart</h2>
-          <h3></h3>
-          <GitHub>
-          <a class="linktoGithub" href="https://github.com/jintodas/Virtual-City-Tour" target="_blank"  rel="noreferrer" > Checkout the project in Github</a>    
-          </GitHub>
-        </Card2>
-        
-        
-        <Card3>
-        <h1>Phaser Game</h1>
-       <GitHub>
-        <a   class="linktoGithub" href="https://github.com/Harry-Yates/PhaserGame-RPG-Caves"target="_blank"  rel="noreferrer" > Checkout the project in Github</a>
-       </GitHub>
 
+  <Card2>     
+      <Description>
+            <h3> TECH: HTML, CSS, React, Node.js, MonggoDB, Express, Bootstrap, Figma  </h3>
+            <GitHub> pixart - going project</GitHub>
+        <GitHub>
+          <a class="linktoGithub" href="https://github.com/jintodas/Virtual-City-Tour" target="_blank"  rel="noreferrer" > Github</a>    
+        </GitHub>
+      </Description>
+    </Card2>
+        
+        
+     <Card3>
+        <Description>
+            <h3> HTML, CSS, Javascript,  Phaser 3  Tiled- Map editor,  Matter Physics,  Github,  Figma, GammaFP</h3>
+            <GitHub>
+               <a   class="linktoGithub" href="https://caves.netlify.app/"target="_blank"  rel="noreferrer" >Website</a>
+            </GitHub>
+
+            <GitHub>
+               <a   class="linktoGithub" href="https://github.com/Harry-Yates/PhaserGame-RPG-Caves"target="_blank"  rel="noreferrer" >Github</a>
+            </GitHub>
+          </Description>
         </Card3>
         
         <Card4>
-          <h2>Shooting Game</h2>
-          <GitHub>
-          <a  class="linktoGithub" href="https://github.com/jintodas/ExploringCodeProject" target="_blank"  rel="noreferrer" > Checkout the project in Github</a>
-          </GitHub>
+        <Description>
+            <h3> TECH: HTML,CSS, Javascript,Three.js, Git, A-frame</h3>
+            <GitHub>
+               <a>Website</a>
+            </GitHub>
+            <GitHub>
+              <a  class="linktoGithub" href="https://github.com/jintodas/ExploringCodeProject" target="_blank"  rel="noreferrer" >Github</a>
+            </GitHub>
+          </Description>
         </Card4>
         
 
-        <Card5>
-          <h2>City Tour</h2>
-      
-          <GitHub>
-          <a   class="linktoGithub" href="https://github.com/jintodas/Virtual-City-Tour"> Checkout the project in Github</a>
-          </GitHub>
+    <Card5>
+    <Description>
+            <h3> TECH: HTML, CSS, Javascript, Git, GitHub, Figma, Bootstrap</h3>
+            <GitHub>
+               <a>Website</a>
+            </GitHub>
+            <GitHub>
+              <a  class="linktoGithub" href="https://github.com/jintodas/Virtual-City-Tour" target="_blank"  rel="noreferrer" >Github</a>
+            </GitHub>
+          </Description>
+
         </Card5>
         </CardsContainer>
           

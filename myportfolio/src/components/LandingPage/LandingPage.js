@@ -4,6 +4,7 @@ import { MainPage } from "./MainPage";
 import { About } from "../About/About";
 import {PortfolioPage} from "../PortfolioPage/PortfolioPage"
 import Footer from "../ui/footer"
+import {ResumePage} from "../CV/ResumePage"
 
 const Container = styled.div`
   overflow: hidden;
@@ -18,8 +19,8 @@ export const LandingPage =() =>{
       <MainPage/>
       <PortfolioPage/>
       <About/>
+      <ResumePage/>
       <Footer/>
-      
     </Container>
   );
 };

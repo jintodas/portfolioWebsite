@@ -37,7 +37,13 @@ height:100px;
 width:100%;
 background-color:#131417;
 color:#ffff;
-font-size:1.5rem;
+font-size:1rem;
+
+@media only screen and (max-width:390px) { 
+  padding:1rem;
+  opacity: 1;
+  font-size:1rem;
+
 `;
 
 const Card1 = styled.div`
@@ -45,8 +51,8 @@ const Card1 = styled.div`
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 350px;
-    height:450px;
+    width: 200px;
+    height:300px;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
     background-color:none; 
@@ -56,23 +62,21 @@ const Card1 = styled.div`
     color:white;
 
     @media only screen and (max-width:390px) { 
-      padding:1rem;
       opacity: 1;
-      height:600px;
-    
-  
+      font-size:1rem;
+      width: 200px;
+      height:300px;
+      margin:auto;
    };
-
-
-`
+    `
 
 const Card2 = styled.div`
     display: flex;
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 350px;
-    height:450px;
+    width: 200px;
+    height:300px;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
     background-color:none;
@@ -80,15 +84,21 @@ const Card2 = styled.div`
     margin:40px;
     color:white;
 
-`
+    @media only screen and (max-width:390px) { 
+      opacity: 1;
+      font-size:1rem;
+      width: 200px;
+      height:280px;
+   };
+   `
 
 const Card3 = styled.div`
     display: flex;
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 350px;
-    height:450px;
+    width: 200px;
+    height:300px;
     box-shadow: 2px 2px 10px 5px white;
     cursor: pointer;
     background-color:none; 
@@ -96,7 +106,12 @@ const Card3 = styled.div`
     margin:40px;
     color:white;
 
- 
+    @media only screen and (max-width:390px) { 
+      opacity: 1;
+      font-size:1rem;
+      width: 200px;
+      height:280px;
+   }; 
 `
 
 const Para = styled.div`
@@ -111,7 +126,20 @@ cursor: pointer;
 background-color:none; 
 margin:auto;
 padding:10px 80px;
-font-size: 1.5rem;
+font-size: 1rem;
+
+
+@media only screen and (max-width:390px) { 
+  opacity: 1;
+  font-size:1rem;
+};
+
+
+
+@media only screen and (max-width:768px) { 
+  opacity: 1;
+  font-size:1rem;
+};
 `
 
 export const About =() =>{

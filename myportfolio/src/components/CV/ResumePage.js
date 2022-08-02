@@ -46,12 +46,13 @@ const Title =styled.div`
 display:flex;
 flex-direction:row;
 flex-wrap: wrap;
-height:130px;
+height:80px;
 background-color:#131417;
 justify-content:center;
 align-item:center;
-font-size:3em;
+font-size:2rem;
 color:#ffff;
+
 
 @media only screen and (max-width: 481px){ 
   opacity:1;
@@ -62,7 +63,7 @@ color:#ffff;
 @media only screen and (max-width:768px) { 
   height:65px;
   opacity:1;
-  font-size:1.5rem;
+  font-size:1.2rem;
 };
 `
 
@@ -102,11 +103,12 @@ const CV = styled.div`
   return (
     <>
    <Container>
-   <Nav/>
+
      <Title>RESUME</Title>
   <CV></CV>
   </Container>
-      <Footer/>
+     
+     
       
     </>
   );
