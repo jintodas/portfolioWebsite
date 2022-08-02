@@ -16,7 +16,6 @@ export const PortfolioRouter = () =>{
             <Route path="/PortfolioPage" element={<PortfolioPage/>}/>
             <Route path="/categories" element={<Footer />} />
             <Route path="/ResumePage" element={<ResumePage />} />
-
             </Routes>
         </Router>
     );

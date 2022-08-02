@@ -38,9 +38,9 @@ const Menu = styled.div`
 `;
 
 const Logo = styled.div`
-  width: 60px;
+  width: 50px;
   height: 40px;
-  margin-left:50px;
+  margin-left:30px;
   display: flex;
   align-items: center;
   justify-items: center;

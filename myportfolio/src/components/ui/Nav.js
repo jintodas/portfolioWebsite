@@ -6,24 +6,40 @@ import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   height:80px;
-  display: flex;
   width:100%;
+  display:flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
   background-color:none;
+
   @media only screen and (max-width: 481px) {
-    padding: 0px;
-    margin:10px 10px ;
-  }
+  margin:0;
+  padding:0;
+  width:100%;
+  };
+
+  @media only screen and (max-width:768px) {
+    margin:0;
+    padding:0;
+    width:100%;
+    };
 `;
-const Left = styled.div``;
+
+
+const Left = styled.div`
+@media only screen and (max-width: 381px) {
+  margin:0;
+  padding:0;
+  with:100%;
+}:
+
+`;
 
 const Menu = styled.div`
   display: flex;
   list-style: none;
   z-index: 10;
-  padding:0 10px;
   margin:10px 10px;
   color:white;
 
@@ -35,8 +51,10 @@ const Menu = styled.div`
     line-height: .5rem;
   }:
 
-  @media only screen and (max-width: 390px) {
-    margin:10px 10px;
+  @media only screen and (max-width: 381px) {
+    margin:0;
+    padding:0;
+    width:100%;
   }:
 
   
@@ -48,14 +66,21 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
-  margin-left:50px;
+  margin-left:30px;
+
+  @media only screen and (max-width: 381px) {
+    margin:0;
+    padding:0;
+    margin-left:10px;
+  }:
+
   &:hover {
     transform: scale(1.1);
     text-decoration: none;
     font-weight: 600;
     transition: 0.2s linear;
     line-height: .5rem;
-  }
+  };
 
 `;
   

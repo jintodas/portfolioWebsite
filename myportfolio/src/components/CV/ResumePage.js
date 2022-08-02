@@ -18,21 +18,26 @@ const Container = styled.div`
   background-color:#131417;
   flex-wrap: wrap;
   margin:auto;
-
+48
 
 @media only screen and (max-width:481px) { 
   opacity:1;
+  width:481px;
   font-size:1.2em;
+  margin: auto;
 };
 
 @media only screen and (max-width:768px) { 
   opacity:1; 
   font-size:1.2em;
+  width:100%;
+  margin: auto;
 };
 
 @media only screen and (max-width:1024px) { 
   opacity:1; 
   font-size:1.2em;
+  
 };
 `
 
@@ -51,13 +56,13 @@ color:#ffff;
 @media only screen and (max-width: 481px){ 
   opacity:1;
   height:30px;
-  font-size:3em
+  font-size:1.2rem
 };
 
 @media only screen and (max-width:768px) { 
-  height:30px;
+  height:65px;
   opacity:1;
-  font-size:3em;
+  font-size:1.5rem;
 };
 `
 
@@ -74,20 +79,23 @@ const CV = styled.div`
     cursor: pointer;
     background-image:url(${ResumeImage});
     margin:auto;
-  
-     @media only screen and (max-width:481px) { 
-      justify-content:center;
-      height:800px;
-      margin:20px 20px;
-      background-image:url(${resumeMobile});
-   };
 
    @media only screen and (max-width:768px) { 
     justify-content:center;
+    margin-top:20px;
     height:1000px;
-    margin:20px 20px;
+    width:100%;
     background-image:url(${resumeIpad});
+    margin-bottom:20px;
   };
+
+    @media only screen and (max-width:481px) { 
+    justify-content:center;
+    width:100%;
+    margin:auto;
+    height:518px;
+    background-image:url(${resumeMobile});
+ };
 `
 
   export const ResumePage =() =>{

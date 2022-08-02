@@ -35,6 +35,17 @@ const BigTitle = styled.h1`
   background-color:#131417;
   color:#ffff;
   margin-top:20px;
+
+
+  @media only screen and (max-width:390px) { 
+    padding:1rem;
+    opacity: 1;
+    height:50px;
+    margin-bottom:10px;
+    margin-top:180px
+ };
+
+
 `;
 
 const Card1 = styled.div`

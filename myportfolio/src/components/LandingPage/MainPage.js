@@ -1,11 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import photoMobile from "../LandingPage/profileMobile.png"
-import photoTablet from "../LandingPage/profileTablet.png"
-import photoIpadpro from "../LandingPage/photoIpadpro.png"
-import photoLaptop from "../LandingPage/photoLaptop.png"
-import photoDesktop from "../LandingPage/desktop.png"
 import Nav from "../ui/Nav";
 import ProfilePhoto from "../LandingPage/profilephoto.jpg"
 
@@ -72,7 +67,7 @@ const Left = styled.div`
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-width:45%;
+width:50%;
 height:600px;
 margin-left:20px;
 color: white;
@@ -83,12 +78,11 @@ justify-content: center;
 
 @media only screen and (max-width:768px) { 
     display: flex;
-    max-width:100%; 
+    max-width:50%; 
     flex-wrap: wrap; 
-    font-size:1.5rem;
+    font-size:1rem;
     padding:1rem;
     opacity: 1;
-    margin-top:50px;
     background-color:#131417;
 };
 
@@ -96,9 +90,8 @@ justify-content: center;
 @media only screen and (max-width:481px) { 
     display: flex;
     max-width:100%; 
-    height:250px;
+    height:350px;
     flex-wrap: wrap;
-    max-width:100%;; 
     font-size:1rem;
     padding:1rem;
     opacity: 1;
@@ -110,45 +103,53 @@ justify-content: center;
 
 const Title1 = styled.h1`
 display:flex;
-height:20px;
+height:200px;
 font-size: 2rem;
 align-item:center;
 color:#fa5d02;
-padding:.5rem;
-`
 
-const Title2 = styled.h1`
-display:flex;
-font-size: 2rem;
-align-item:center;
-color:#ff03f2;
+@media only screen and (max-width:481px) { 
+    display: flex;
+    max-width:100%; 
+    height:200px;
+    flex-wrap: wrap;
+    font-size:1.5rem;
+    margin-top:0;
+    padding:1rem;
+    opacity: 1;
+  
+ };
 `
 
 const Right = styled.div`
 display:flex;
-height:500px;
+justify-content: center;
+height:600px;
 width:45%;
 background-color: none;
-color: white;
-font-size:2rem;
 
 @media only screen and (max-width:768px) { 
     display: flex;
-    width:90%; 
+    width:45%; 
+    height:600px;
     flex-wrap: wrap; 
     padding:1rem;
     opacity: 1;
-    margin-top:0px;
+    margin-bottom:20px;
+    margin:auto;
 };
 
 
 @media only screen and (max-width:481px) { 
     display: flex;
+    width:100%; 
     flex-wrap: wrap; 
-    max-width:90%;
     margin:auto;
     padding:1rem;
     opacity: 1;
+    height:500px;
+    margin:auto;
+    margin-bottom:20px;
  }; 
 
 
@@ -157,10 +158,8 @@ font-size:2rem;
 const CoverPhoto = styled.div`
 display:flex;
 margin-top:100px;
-width : 300px;
+width: 300px;
 height:380px;
-color: white;
-display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 align-items: right;
@@ -168,30 +167,23 @@ background-image:url(${ProfilePhoto});
 
 @media only screen and (max-width:768px) { 
     display: flex;
-    height:380px;
-    width:90%; 
     flex-wrap: wrap; 
-    padding:1rem;
     opacity: 1;
-    margin-top:0px;
+    margin:10px 20px;
     background-image:url(${ProfilePhoto})
 };
 
 
 @media only screen and (max-width:481px) { 
     display: flex;
-    height:380px;
     flex-wrap: wrap; 
-    max-width:90%;
     margin:auto;
     opacity: 1;
-    margin-top:0px;
+    margin:10px 10px;
     background-image:url(${ProfilePhoto})
  }; 
 
 `
-
-
 
 
 const Card1 = styled.div`
@@ -206,25 +198,18 @@ const Card1 = styled.div`
     font-size: 1rem;
     margin:auto;
     color:white;
-
-//     @media only screen and (max-width:390px) { 
-//       padding:1rem;
-//       opacity: 1;
-//       height:600px;
-//    };
 `
 
 const Card2 = styled.div`
     display: flex;
-    flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
     width: 350px;
-    height:450px;
+    height:400px;
     cursor: pointer;
     background-color:none;
     font-size: 1rem;
-    margin:40px;
+    margin:40px 0px;
 `
 
 export const MainPage =() =>{
@@ -233,11 +218,8 @@ export const MainPage =() =>{
    <Left>
     <Card1>
        <Title1>
-          <h4>Portfolio - Jinto Lal Das</h4>
+          <h3>Hey! It is Jinto Lal Das. An aspiring..<h1>Frontend Developer</h1> </h3>
        </Title1>
-       <Title2>
-          <h2>Frontend Developer</h2>
-       </Title2>
     </Card1>
     </Left>
 
