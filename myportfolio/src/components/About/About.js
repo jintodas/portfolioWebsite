@@ -65,7 +65,7 @@ const Card1 = styled.div`
       opacity: 1;
       font-size:1rem;
       width: 200px;
-      height:300px;
+      height:320px;
       margin:auto;
    };
     `
