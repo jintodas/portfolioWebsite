@@ -11,6 +11,8 @@ import AframeMobile  from "../PortfolioPage/AframeMobile.png"
 import pixart from "../PortfolioPage/pixart.png"
 import pixartMobile from "../PortfolioPage/pixartMobile.png"
 import "./style/style.css";
+import doclounge from "../PortfolioPage/doclounge.png"
+import docloungeMobile  from "../PortfolioPage/docloungeMobile.png"
 
 
 const CardsContainer = styled.div`
@@ -58,7 +60,7 @@ const Description = styled.h4`
   width:100%;
   color:#ffff;
   margin-top:288px;
-  background:white;
+  background:#cfcace;
   color:black;
   padding:1rem;
 
@@ -185,6 +187,29 @@ const Card5 = styled.div`
    };
 `
 
+
+const Card6 = styled.div`
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 600px;
+    height:400px;
+    margin: 20px 0px;
+    box-shadow: 2px 2px 10px 5px white;
+    cursor: pointer;
+    background-image:url(${doclounge});
+    font-color: #ffff;
+     
+      @media only screen and (max-width:390px) { 
+      display:flex;
+      opacity: 1;
+      height:250px;
+      background-image:url(${docloungeMobile});
+   };
+`
+
+
 const GitHub = styled.div`
 width:50%;
 height:30px;
@@ -277,6 +302,17 @@ export const PortfolioPage =() =>{
           </Description>
 
         </Card5>
+
+
+        <Card6>
+        <Description>
+            <h3> Brief: Doclounge Client Project conduccted with team for frontend developer at Hyper Island</h3>
+          
+            <GitHub>
+              <a  class="linktoGithub" href="https://www.figma.com/proto/iuSYnZTeHErQv3yUJbrbQ1/DocLounge-VOD-%26-Hemma-Hos-MASTER?node-id=112%3A74&scaling=scale-down&page-id=0%3A1&starting-point-node-id=112%3A74&show-proto-sidebar=1" target="_blank"  rel="noreferrer" >Prototype</a>
+            </GitHub>
+          </Description>
+        </Card6>
         </CardsContainer>
           
          </> 

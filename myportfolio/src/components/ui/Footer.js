@@ -80,7 +80,7 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-left: 10px;
   font-size:.7rem;
-  background-color:#131417;;
+  background-color:#363638;
   font-color:white;
   margin-right:20px;
   @media only screen and (max-width: 380px) {
