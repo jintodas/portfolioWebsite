@@ -18,7 +18,6 @@ const Container = styled.div`
   background-color:#131417;
   flex-wrap: wrap;
   margin:auto;
-48
 
 @media only screen and (max-width:481px) { 
   opacity:1;

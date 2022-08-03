@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#131417;;
+  background-color:#131417;
   font-color:white;
 
   font-size:1rem;
@@ -80,7 +80,7 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-left: 10px;
   font-size:.7rem;
-  background-color:#363638;
+  background-color:none;
   font-color:white;
   margin-right:20px;
   @media only screen and (max-width: 380px) {
