@@ -5,10 +5,7 @@ import {Portfolio} from "./Portfolio";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-
-<Portfolio/>
-);
+root.render(<Portfolio/>);
 
 
 

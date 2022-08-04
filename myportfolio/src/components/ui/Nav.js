@@ -69,9 +69,8 @@ const Logo = styled.div`
   margin-left:30px;
 
   @media only screen and (max-width: 381px) {
-    margin:0;
     padding:0;
-    margin-left:10px;
+    margin-left:5px;
   }:
 
   &:hover {
@@ -93,7 +92,7 @@ const Right = styled.div`
   margin-right:20px;
 
   @media only screen and (max-width: 390px) {
-    margin:0px 0px;
+    margin:0px 20px;
   }:
 
 

@@ -36,13 +36,13 @@ color:black;
 height:100px;
 width:100%;
 background-color:#131417;
-color:#ffff;
-font-size:1rem;
+color:#fc9e05;;
+font-size:2rem;
 
 @media only screen and (max-width:390px) { 
   padding:1rem;
   opacity: 1;
-  font-size:1rem;
+  font-size:1.2rem;
 
 `;
 

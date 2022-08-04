@@ -18,11 +18,11 @@ const Container = styled.div`
   background-color:#131417;
   flex-wrap: wrap;
   margin:auto;
+  font-size:1rem;
 
 @media only screen and (max-width:481px) { 
   opacity:1;
   width:481px;
-  font-size:1.2em;
   margin: auto;
 };
 
@@ -49,20 +49,23 @@ height:80px;
 background-color:#131417;
 justify-content:center;
 align-item:center;
-font-size:2rem;
-color:#ffff;
+font-size:1rem;
+color:#fc9e05;
+padding:1rem;
+margin-top:-25px;
+
 
 
 @media only screen and (max-width: 481px){ 
   opacity:1;
   height:30px;
-  font-size:1.2rem
+  font-size:2rem
 };
 
 @media only screen and (max-width:768px) { 
   height:65px;
   opacity:1;
-  font-size:1.2rem;
+  font-size:1.5rem;
 };
 `
 
@@ -103,7 +106,7 @@ const CV = styled.div`
     <>
    <Container>
 
-     <Title>RESUME</Title>
+     <Title><h2>RESUME</h2></Title>
   <CV></CV>
   </Container>
      

@@ -10,7 +10,6 @@ const Container = styled.div`
   overflow: hidden;
   background-color:white;
   width:100%;
-  border:none;
 `;
 
 export const LandingPage =() =>{

@@ -10,7 +10,7 @@ const Container = styled.div`
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-height:100vh;
+height:80vh;
 max-width: 100%;
 background-color:#131417;
 justify-content: space-around;
@@ -53,7 +53,7 @@ justify-content: space-around;
     display: flex;
     height:100vh;
     flex-wrap: wrap;
-    max-width:100%;; 
+    width:100%;; 
     font-size:1rem;
     padding:1rem;
     opacity: 1;
@@ -69,11 +69,10 @@ flex-direction: row;
 flex-wrap: wrap;
 width:50%;
 height:600px;
-margin-left:20px;
+margin-left:10px;
 color: white;
-align-items: center;
 font-size:2rem;
-justify-content: center;
+
 
 
 @media only screen and (max-width:768px) { 
@@ -103,20 +102,21 @@ justify-content: center;
 
 const Title1 = styled.h1`
 display:flex;
-height:200px;
+height:300px;
 font-size: 1.5rem;
-align-item:center;
 color:#fa5d02;
+margin-top:-150px;
 
 @media only screen and (max-width:481px) { 
     display: flex;
     max-width:100%; 
-    height:200px;
+    height:250px;
     flex-wrap: wrap;
     font-size:1rem;
-    margin-top:0;
-    padding:1rem;
+    margin-left:-60px;
+    margin-top:-50px;
     opacity: 1;
+    align-item:center;
   
  };
 `
@@ -215,7 +215,8 @@ export const MainPage =() =>{
    <Left>
     <Card1>
        <Title1>
-          <h3>Hey! This is Jinto L. Das. An aspiring..<h1>FRONTEND DEVELOPER</h1></h3>
+          <h3>
+            <h2>Hey! I am Jinto Lal Das</h2> <h1>FRONTEND DEVELOPER</h1> Please scroll down to checkout my works. For more info please look into my resume and feel free to contact me!  </h3>
        </Title1>
     </Card1>
     </Left>

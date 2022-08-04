@@ -3,14 +3,13 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-  height:100px;
+  height:150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color:#131417;
   font-color:white;
-
-  font-size:1rem;
+  font-size:.8rem;
   color:white;
 
   @media only screen and (max-width: 380px) {
@@ -44,7 +43,7 @@ const Menu = styled.div`
   list-style: none;
   z-index: 10;
   margin-right:10px;
-  font-size:.7rem;
+  font-size:.8rem;
   @media only screen and (max-width: 380px) {
     padding: 0px 10px;
     font-size:.5rem;
