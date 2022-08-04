@@ -31,12 +31,13 @@ const BigTitle = styled.h1`
   flex-direction:row;
   flex-wrap: wrap;
   justify-content:center;
-  font-size: 2.5rem;
+  font-size:2.5rem;
   height:80px;
   width:100%;
   background-color:#131417;
   color:#fc9e05;
-  margin-top:10px;
+  margin-top:30px;
+margin-bottom:-20px;
 
 
   @media only screen and (max-width:390px) { 

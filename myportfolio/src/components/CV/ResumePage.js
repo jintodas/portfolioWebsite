@@ -49,10 +49,11 @@ height:80px;
 background-color:#131417;
 justify-content:center;
 align-item:center;
-font-size:1rem;
+font-size:1.5rem;
 color:#fc9e05;
 padding:1rem;
-margin-top:-25px;
+margin-top:-35px;
+margin-bottom:20px;
 
 
 

@@ -71,7 +71,7 @@ width:50%;
 height:600px;
 margin-left:10px;
 color: white;
-font-size:2rem;
+font-size:1rem;
 
 
 
@@ -103,16 +103,16 @@ font-size:2rem;
 const Title1 = styled.h1`
 display:flex;
 height:300px;
-font-size: 1.5rem;
+font-size: 1.2rem;
 color:#fa5d02;
-margin-top:-150px;
+margin-top:-100px;
 
 @media only screen and (max-width:481px) { 
     display: flex;
     max-width:100%; 
     height:250px;
     flex-wrap: wrap;
-    font-size:1rem;
+    font-size:.8rem;
     margin-left:-60px;
     margin-top:-50px;
     opacity: 1;
@@ -188,7 +188,7 @@ const Card1 = styled.div`
     flex-direction:row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 450px;
+    width: 500px;
     height:200px;
     cursor: pointer;
     background-color:none; 
@@ -202,11 +202,12 @@ const Card2 = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     width: 350px;
-    height:400px;
+    height:350px;
     cursor: pointer;
     background-color:none;
     font-size: 1rem;
-    margin:40px 0px;
+    margin:20px 0px;
+    margin-top:-30px;
 `
 
 export const MainPage =() =>{
@@ -216,7 +217,7 @@ export const MainPage =() =>{
     <Card1>
        <Title1>
           <h3>
-            <h2>Hey! I am Jinto Lal Das</h2> <h1>FRONTEND DEVELOPER</h1> Please scroll down to checkout my works. For more info please look into my resume and feel free to contact me!  </h3>
+            <h2>Hey! I am Jinto L. Das</h2> <h1>FRONTEND DEVELOPER</h1> Please scroll down to checkout my works. For more info please look into my resume and feel free to contact me!  </h3>
        </Title1>
     </Card1>
     </Left>

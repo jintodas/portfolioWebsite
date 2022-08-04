@@ -6,7 +6,7 @@ const Container = styled.div`
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-height:100%;
+height:90%;
 max-width: 100%;
 background-color:#131417;
 justify-content: space-around;
@@ -33,14 +33,14 @@ flex-wrap: wrap;
 justify-content:center;
 margin:auto;
 color:black;
-height:100px;
+height:80px;
 width:100%;
 background-color:#131417;
 color:#fc9e05;;
-font-size:2rem;
+font-size:1.3rem;
 
 @media only screen and (max-width:390px) { 
-  padding:1rem;
+  padding:0rem;
   opacity: 1;
   font-size:1.2rem;
 
@@ -63,10 +63,12 @@ const Card1 = styled.div`
 
     @media only screen and (max-width:390px) { 
       opacity: 1;
-      font-size:1rem;
+      font-size:.8rem;
       width: 200px;
-      height:320px;
+      height:280px;
+      margin:10px;
       margin:auto;
+      margin:15px;
    };
     `
 
@@ -86,9 +88,10 @@ const Card2 = styled.div`
 
     @media only screen and (max-width:390px) { 
       opacity: 1;
-      font-size:1rem;
+      font-size:.8rem;
       width: 200px;
-      height:300px;
+      height:260px;
+      margin:15px;
    };
    `
 
@@ -108,9 +111,10 @@ const Card3 = styled.div`
 
     @media only screen and (max-width:390px) { 
       opacity: 1;
-      font-size:1rem;
+      font-size:.8rem;
       width: 200px;
-      height:300px;
+      height:260px;
+      margin:15px;
    }; 
 `
 
@@ -131,14 +135,15 @@ font-size: 1rem;
 
 @media only screen and (max-width:390px) { 
   opacity: 1;
-  font-size:1rem;
+  font-size:.8rem;
+  margin-top:-15px;
 };
 
 
 
 @media only screen and (max-width:768px) { 
   opacity: 1;
-  font-size:1rem;
+  font-size:.8rem;
 };
 `
 
