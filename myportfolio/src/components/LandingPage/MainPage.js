@@ -89,7 +89,7 @@ font-size:1rem;
 @media only screen and (max-width:481px) { 
     display: flex;
     max-width:100%; 
-    height:200px;
+    height:230px;
     flex-wrap: wrap;
     font-size:1rem;
     padding:1rem;
@@ -124,6 +124,7 @@ margin-top:-100px;
 const Right = styled.div`
 display:flex;
 justify-content: center;
+align-item: center;
 height:600px;
 width:45%;
 background-color: none;
@@ -143,11 +144,11 @@ background-color: none;
 @media only screen and (max-width:481px) { 
     display: flex;
     width:100%; 
+    height:400px;
     flex-wrap: wrap; 
     margin:auto;
-    padding:1.5rem;
+    padding:1rem;
     opacity: 1;
-    height:400px;
     margin:auto;
  }; 
 
@@ -167,7 +168,7 @@ background-image:url(${ProfilePhoto});
     display: flex;
     flex-wrap: wrap; 
     opacity: 1;
-    margin:10px 20px;
+    margin:10px 10px;
     background-image:url(${ProfilePhoto})
 };
 
@@ -177,7 +178,6 @@ background-image:url(${ProfilePhoto});
     flex-wrap: wrap; 
     margin:auto;
     opacity: 1;
-    margin:10px 10px;
     background-image:url(${ProfilePhoto})
  }; 
 `
@@ -201,13 +201,13 @@ const Card2 = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 350px;
-    height:350px;
+    width: 300px;
+    height:300px;
     cursor: pointer;
     background-color:none;
     font-size: 1rem;
-    margin:20px 0px;
-    margin-top:-30px;
+    margin-top:-10px;
+    margin-left:-30px;
 `
 
 export const MainPage =() =>{

@@ -32,12 +32,12 @@ const BigTitle = styled.h1`
   flex-wrap: wrap;
   justify-content:center;
   font-size:2.5rem;
-  height:80px;
+  height:70px;
   width:100%;
   background-color:#131417;
   color:#fc9e05;
-  margin-top:30px;
-margin-bottom:-20px;
+  margin-top:20px;
+  margin-bottom:-15px;
 
 
   @media only screen and (max-width:390px) { 
@@ -45,7 +45,7 @@ margin-bottom:-20px;
     opacity: 1;
     height:30px;
     margin-bottom:10px;
-    margin-top:30px
+    margin-top:0px
     font-size: 1.5rem;
  };
 `;
@@ -70,8 +70,6 @@ const Description = styled.h4`
     font-size:.5rem;
     height:50px;
     width:100%;
-   
-    
  };
 `;
 
