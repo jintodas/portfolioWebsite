@@ -10,7 +10,7 @@ const Container = styled.div`
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-height:80vh;
+height:70vh;
 max-width: 100%;
 background-color:#131417;
 justify-content: space-around;
@@ -28,17 +28,16 @@ justify-content: space-around;
 
 @media only screen and (max-width:1024px) { 
     max-width: 100vw;
-    display: flex;
-    flex-wrap: wrap; 
-    font-size:10px;
-    padding:1rem;
+    max-height:100%;
+    display: flex; 
     opacity: 1;
     background-color:#131417;
 };
 
 
 @media only screen and (max-width:768px) { 
-    max-width: 100%;
+    max-width:100%;
+    height:100%;
     display: flex;
     flex-wrap: wrap; 
     font-size:10px;
@@ -74,6 +73,17 @@ color: white;
 font-size:1rem;
 
 
+@media only screen and (max-width:1024px) { 
+    max-width:50%; 
+    display: flex;
+    flex-wrap: wrap; 
+    font-size:1rem;
+    margin-left:10px;
+    padding:1rem;
+    opacity: 1;
+    background-color:#131417;
+};
+
 
 @media only screen and (max-width:768px) { 
     display: flex;
@@ -83,13 +93,14 @@ font-size:1rem;
     padding:1rem;
     opacity: 1;
     background-color:#131417;
+    margin-top:-40px;
 };
 
 
 @media only screen and (max-width:481px) { 
     display: flex;
     max-width:100%; 
-    height:230px;
+    height:350px;
     flex-wrap: wrap;
     font-size:1rem;
     padding:1rem;
@@ -131,12 +142,13 @@ background-color: none;
 
 @media only screen and (max-width:768px) { 
     display: flex; 
-    height:500px;
+    height:600px;
     flex-wrap: wrap; 
     padding:1rem;
     opacity: 1;
     height:400px;
     margin:auto;
+    margin-top:-70px;
     
 };
 
