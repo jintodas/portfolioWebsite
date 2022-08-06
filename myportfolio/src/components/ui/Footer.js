@@ -11,16 +11,18 @@ const Wrapper = styled.div`
   font-color:white;
   font-size:.8rem;
   color:white;
+  width:100%;
 
-  @media only screen and (max-width: 380px) {
-    padding: 0px 10px;
-    font-size:1rem;
-
-  };
+  @media only screen and (max-width:481px) { 
+    padding:1rem;
+    opacity: 1;
+    width:100%;
+ };
 `;
 
+
 const Left = styled.div`
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 481px) {
   padding: 0px 10px;
   font-size:.7rem;
 
@@ -30,7 +32,7 @@ const Left = styled.div`
 const Center = styled.div`
   text-align: center;
 
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 481px) {
     padding: 0px 10px;
     font-size:.5rem;
   
@@ -44,8 +46,7 @@ const Menu = styled.div`
   z-index: 10;
   margin-right:10px;
   font-size:.8rem;
-  @media only screen and (max-width: 380px) {
-    padding: 0px 10px;
+  @media only screen and (max-width: 481px) {
     font-size:.5rem;
   
   };
@@ -82,8 +83,7 @@ const MenuItem = styled.div`
   background-color:none;
   font-color:white;
   margin-right:20px;
-  @media only screen and (max-width: 380px) {
-    padding:1rem;
+  @media only screen and (max-width: 481px) {
     font-size:.5rem;
   
   };
@@ -94,7 +94,7 @@ const Right = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 481px) {
     padding: 0px 10px;
     font-size:.5rem;
   

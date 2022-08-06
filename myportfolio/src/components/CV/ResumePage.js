@@ -19,11 +19,14 @@ const Container = styled.div`
   flex-wrap: wrap;
   margin:auto;
   font-size:1rem;
+  margin-bottom:10px;
 
 @media only screen and (max-width:481px) { 
-  opacity:1;
-  width:481px;
-  margin: auto;
+  padding:1rem;
+  opacity: 1;
+  margin-bottom:10px;
+  width:100%;
+ 
 };
 
 @media only screen and (max-width:768px) { 
@@ -83,6 +86,7 @@ const CV = styled.div`
     cursor: pointer;
     background-image:url(${ResumeImage});
     margin:auto;
+    background-color:#131417;
 
    @media only screen and (max-width:768px) { 
     justify-content:center;
@@ -90,7 +94,7 @@ const CV = styled.div`
     height:1000px;
     width:100%;
     background-image:url(${resumeIpad});
-    margin-bottom:20px;
+    background-color:#131417;
   };
 
     @media only screen and (max-width:481px) { 

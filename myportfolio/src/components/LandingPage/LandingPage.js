@@ -7,9 +7,9 @@ import Footer from "../ui/footer"
 import {ResumePage} from "../CV/ResumePage"
 
 const Container = styled.div`
-  overflow: hidden;
-  background-color:white;
+  background-color:#131417;
   width:100%;
+  border:0;
 `;
 
 export const LandingPage =() =>{

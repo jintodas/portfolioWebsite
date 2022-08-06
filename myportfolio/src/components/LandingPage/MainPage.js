@@ -20,7 +20,6 @@ justify-content: space-around;
     display: flex;
     flex-wrap: wrap; 
     font-size:10px;
-    padding:1rem;
     opacity: 1;
     background-color:#131417;
 };
@@ -190,6 +189,7 @@ background-image:url(${ProfilePhoto});
     flex-wrap: wrap; 
     margin:auto;
     opacity: 1;
+    border:0;
     background-image:url(${ProfilePhoto})
  }; 
 `
@@ -219,7 +219,7 @@ const Card2 = styled.div`
     background-color:none;
     font-size: 1rem;
     margin-top:-10px;
-    margin-left:-30px;
+    margin-left:0px;
 `
 
 export const MainPage =() =>{

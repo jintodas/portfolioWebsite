@@ -19,11 +19,19 @@ const CardsContainer = styled.div`
   display:flex;
   flex-direction:row;
   height:100%;
-  max-width:100%;
+  width:100%;
   justify-content: space-around;
   flex-wrap: wrap;
   background-color:#131417;
   color:#ffff;
+
+
+  @media only screen and (max-width:481px) { 
+    padding:1rem;
+    opacity: 1;
+    margin-bottom:10px;
+    width:100%;
+ };
 `;
 
 const BigTitle = styled.h1`
@@ -40,13 +48,14 @@ const BigTitle = styled.h1`
   margin-bottom:-15px;
 
 
-  @media only screen and (max-width:390px) { 
+  @media only screen and (max-width:481px) { 
     padding:1rem;
     opacity: 1;
     height:30px;
     margin-bottom:10px;
     margin-top:0px
     font-size: 1.5rem;
+    width:100%;
  };
 `;
 
@@ -65,7 +74,7 @@ const Description = styled.h4`
   color:black;
   padding:1rem;
 
-  @media only screen and (max-width:390px) { 
+  @media only screen and (max-width:481px) { 
     margin-top:182px;
     font-size:.5rem;
     height:50px;
@@ -91,12 +100,13 @@ const Card1 = styled.div`
     font-size: 1.5rem;
     color:#ffff;
 
-    @media only screen and (max-width:390px) { 
+    @media only screen and (max-width:481px) { 
       width:400px;
       height:300px;
       opacity: 1;
       height:250px;
       background-image:url(${FideleoMobile});
+      box-shadow: none;
    };
 `
 
@@ -114,10 +124,11 @@ const Card2 = styled.div`
     color:#ffff;
     background-image:url(${pixart});
 
-    @media only screen and (max-width:390px) { 
+    @media only screen and (max-width:481px) { 
       opacity: 1;
       height:250px;
       background-image:url(${pixartMobile});
+      box-shadow: none;
    };
 
 `
@@ -137,10 +148,11 @@ const Card3 = styled.div`
     color:#ffff;
     background-image:url(${Phaser});
 
-    @media only screen and (max-width:390px) { 
+    @media only screen and (max-width:481px) { 
       opacity: 1;
       height:250px;
       background-image:url(${PhaserMobile});
+      box-shadow: none;
    };
     
 `
@@ -159,10 +171,11 @@ const Card4 = styled.div`
     font-color: #ffff;
     font-size: 1.5rem;
 
-    @media only screen and (max-width:390px) { 
+    @media only screen and (max-width:481px) { 
       opacity: 1;
       height:250px;
       background-image:url(${AframeMobile});
+      box-shadow: none;
    };
 `
 const Card5 = styled.div`
@@ -178,11 +191,12 @@ const Card5 = styled.div`
     background-image:url(${CityTour});
     font-color: #ffff;
      
-      @media only screen and (max-width:390px) { 
+      @media only screen and (max-width:481px) { 
       display:flex;
       opacity: 1;
       height:250px;
       background-image:url(${CityTourMobile});
+      box-shadow: none;
    };
 `
 
@@ -200,13 +214,15 @@ const Card6 = styled.div`
     background-image:url(${doclounge});
     font-color: #ffff;
      
-      @media only screen and (max-width:390px) { 
+      @media only screen and (max-width:481px) { 
       display:flex;
       opacity: 1;
       height:250px;
       background-image:url(${docloungeMobile});
+      box-shadow: none;
    };
 `
+
 
 
 const GitHub = styled.div`

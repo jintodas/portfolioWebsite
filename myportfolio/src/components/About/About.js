@@ -10,7 +10,14 @@ height:90%;
 max-width: 100%;
 background-color:#131417;
 justify-content: space-around;
-`
+
+@media only screen and (max-width:481px) { 
+  padding:1rem;
+  width:100%;
+  opacity: 1;
+  margin-bottom:10px;
+
+`;
 
 
 const Right = styled.div`
@@ -23,6 +30,7 @@ background-color: none;
 color: black;
 font-size:1.5rem;
 justify-content: space-around;
+
 
 `
 
@@ -39,10 +47,10 @@ background-color:#131417;
 color:#fc9e05;;
 font-size:1.3rem;
 
-@media only screen and (max-width:390px) { 
-  padding:0rem;
+@media only screen and (max-width:481px) { 
   opacity: 1;
   font-size:1.2rem;
+  width:100%;
 
 `;
 
@@ -61,7 +69,7 @@ const Card1 = styled.div`
     margin:40px;
     color:white;
 
-    @media only screen and (max-width:390px) { 
+    @media only screen and (max-width:481px) { 
       opacity: 1;
       font-size:.8rem;
       width: 200px;
@@ -86,7 +94,7 @@ const Card2 = styled.div`
     margin:40px;
     color:white;
 
-    @media only screen and (max-width:390px) { 
+    @media only screen and (max-width:481px) { 
       opacity: 1;
       font-size:.8rem;
       width: 200px;
@@ -109,7 +117,7 @@ const Card3 = styled.div`
     margin:40px;
     color:white;
 
-    @media only screen and (max-width:390px) { 
+    @media only screen and (max-width:481px) { 
       opacity: 1;
       font-size:.8rem;
       width: 200px;
@@ -133,7 +141,7 @@ padding:10px 80px;
 font-size: 1rem;
 
 
-@media only screen and (max-width:390px) { 
+@media only screen and (max-width:4810px) { 
   opacity: 1;
   font-size:.8rem;
   margin-top:-15px;
